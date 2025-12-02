@@ -1,0 +1,9 @@
+
+.idea/catawish.mongo.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+
+vendor/
+/src/vendor/

@@ -1,0 +1,41 @@
+version: "3"
+
+networks:
+  catamongo.net:
+    driver: bridge
+
+services:
+  php:
+    build:
+        context: build
+        dockerfile: 8.3-cli.Dockerfile
+    ports:
+      - "12080:80"
+      - "12443:443"
+    volumes:
+      - ./app:/var/php
+    working_dir: /var/php
+    networks:
+      - catamongo.net
+    command: php -S 0.0.0.0:80 -t /var/php/public
+
+  ################################################
+  # mongodb & mongo-express
+  ###############################################
+  mongo:
+    image: mongo:latest
+    volumes:
+    - ./data:/var/data
+    working_dir: /var/data
+    networks:
+    - catamongo.net
+    ports:
+    - 27017:27017
+
+  mongo-express:
+    image: mongo-express:latest
+    networks:
+    - catamongo.net
+    ports:
+    - "8081:8081"
+

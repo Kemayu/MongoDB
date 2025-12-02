@@ -1,0 +1,340 @@
+[{
+  "_id": {
+    "$oid": "6543ac35a08f42f1cc02e80d"
+  },
+  "numero": 1,
+  "libelle": "Margherita",
+  "description": "Tomate, mozzarella, basilic",
+  "image": "https://www.dominos.fr/ManagedAssets/FR/product/PZSO.png",
+  "categorie": "Pizzas",
+  "tarifs": [
+    {
+      "taille": "grande",
+      "tarif": 11.99
+    },
+    {
+      "taille": "normale",
+      "tarif": 8.99
+    }
+  ],
+  "recettes": [
+    {
+      "$oid": "6543b503f0e418df120c79b8"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79ba"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79a2"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6543ac35a08f42f1cc02e80e"
+  },
+  "numero": 2,
+  "libelle": "Reine",
+  "description": "Tomate, mozzarella, jambon, champignons",
+  "image": "https://www.dominos.fr/ManagedAssets/FR/product/PZRE.png",
+  "categorie": "Pizzas",
+  "tarifs": [
+    {
+      "taille": "normale",
+      "tarif": 9.99
+    },
+    {
+      "taille": "grande",
+      "tarif": 12.99
+    }
+  ],
+  "recettes": [
+    {
+      "$oid": "6543b503f0e418df120c79bc"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79ae"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79b8"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79b9"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79b1"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6543ac35a08f42f1cc02e80f"
+  },
+  "numero": 3,
+  "libelle": "Savoyarde",
+  "description": "Tomate, mozzarella, jambon, reblochon, pommes de terre, oignons",
+  "image": "https://www.dominos.fr/ManagedAssets/FR/product/PZSA.png",
+  "categorie": "Pizzas",
+  "tarifs": [
+    {
+      "taille": "grande",
+      "tarif": 13.99
+    },
+    {
+      "taille": "normale",
+      "tarif": 10.99
+    }
+  ],
+  "recettes": [
+    {
+      "$oid": "6543b503f0e418df120c79b9"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79c1"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79ae"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6543ac35a08f42f1cc02e810"
+  },
+  "numero": 4,
+  "libelle": "Pepperoni",
+  "description": "Tomate, mozzarella, pepperoni",
+  "image": "https://www.dominos.fr/ManagedAssets/FR/product/PZPE.png",
+  "categorie": "Pizzas",
+  "tarifs": [
+    {
+      "taille": "grande",
+      "tarif": 12.99
+    },
+    {
+      "taille": "normale",
+      "tarif": 9.99
+    }
+  ],
+  "recettes": [
+    {
+      "$oid": "6543b503f0e418df120c79b2"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79bb"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79a5"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79a6"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6543ac35a08f42f1cc02e811"
+  },
+  "numero": 5,
+  "libelle": "cola",
+  "description": "Cola-Calo, producteur local",
+  "image": "https://www.dominos.fr/ManagedAssets/FR/product/BOCO.png",
+  "categorie": "Boissons",
+  "tarifs": [
+    {
+      "taille": "grande",
+      "tarif": 3.99
+    },
+    {
+      "taille": "normale",
+      "tarif": 2.99
+    }
+  ],
+  "recettes": [
+    {
+      "$oid": "6543b503f0e418df120c79b9"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79a3"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79be"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79a5"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6543ac35a08f42f1cc02e812"
+  },
+  "numero": 6,
+  "libelle": "eau",
+  "description": "eau plate, eau pétillante ou aromatisée",
+  "image": "https://www.dominos.fr/ManagedAssets/FR/product/BOEA.png",
+  "categorie": "Boissons",
+  "tarifs": [
+    {
+      "taille": "grande",
+      "tarif": 2.99
+    },
+    {
+      "taille": "normale",
+      "tarif": 1.99
+    }
+  ],
+  "recettes": [
+    {
+      "$oid": "6543b503f0e418df120c79a9"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79c0"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79af"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79c4"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79a2"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6543ac35a08f42f1cc02e813"
+  },
+  "numero": 7,
+  "libelle": "salade verte",
+  "description": "salade verte du moment",
+  "image": "https://www.dominos.fr/ManagedAssets/FR/product/SASA.png",
+  "categorie": "Salades",
+  "tarifs": [
+    {
+      "taille": "normale",
+      "tarif": 3.99
+    },
+    {
+      "taille": "grande",
+      "tarif": 4.99
+    }
+  ],
+  "recettes": [
+    {
+      "$oid": "6543b503f0e418df120c79c5"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79a2"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79a8"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6543ac35a08f42f1cc02e814"
+  },
+  "numero": 8,
+  "libelle": "salade tomate",
+  "description": "salade verte, tomate et son huile",
+  "image": "https://www.dominos.fr/ManagedAssets/FR/product/SATO.png",
+  "categorie": "Salades",
+  "tarifs": [
+    {
+      "taille": "grande",
+      "tarif": 5.99
+    },
+    {
+      "taille": "normale",
+      "tarif": 4.99
+    }
+  ],
+  "recettes": [
+    {
+      "$oid": "6543b503f0e418df120c79ae"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79bf"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79b2"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79ac"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6543ac35a08f42f1cc02e815"
+  },
+  "numero": 9,
+  "libelle": "tiramisu",
+  "description": "tiramisu, au café, bien sûr",
+  "image": "https://www.dominos.fr/ManagedAssets/FR/product/DETI.png",
+  "categorie": "Desserts",
+  "tarifs": [
+    {
+      "taille": "normale",
+      "tarif": 3.99
+    },
+    {
+      "taille": "grande",
+      "tarif": 4.99
+    }
+  ],
+  "recettes": [
+    {
+      "$oid": "6543b503f0e418df120c79be"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79bb"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79b7"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79c6"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6543ac35a08f42f1cc02e816"
+  },
+  "numero": 10,
+  "libelle": "panna cotta",
+  "description": "panna cotta, la meilleure de la place",
+  "image": "https://www.dominos.fr/ManagedAssets/FR/product/DEPA.png",
+  "categorie": "Desserts",
+  "tarifs": [
+    {
+      "taille": "grande",
+      "tarif": 5.99
+    },
+    {
+      "taille": "normale",
+      "tarif": 4.99
+    }
+  ],
+  "recettes": [
+    {
+      "$oid": "6543b503f0e418df120c79a7"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79b6"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79ac"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79b4"
+    },
+    {
+      "$oid": "6543b503f0e418df120c79a2"
+    }
+  ]
+}]
