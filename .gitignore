@@ -7,5 +7,9 @@
 
 vendor/
 /src/vendor/
+
 .env
+
+
+app/src/composer.lock
 
