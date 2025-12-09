@@ -7,3 +7,5 @@
 
 vendor/
 /src/vendor/
+.env
+
