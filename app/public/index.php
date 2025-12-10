@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 $client = new Client('mongodb://mongo:27017');
-$db = $client->selectDatabase('ChoPizza');
+$db = $client->selectDatabase('Chopizza');
 $produitsCol = $db->selectCollection('Produit');
 
 $categories = $produitsCol->distinct('categorie');
@@ -23,30 +23,43 @@ $status = $_GET['status'] ?? null;
 $formError = null;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $libelle = trim($_POST['libelle'] ?? '');
-    $description = trim($_POST['description'] ?? '');
-    $categorieInput = $_POST['categorie'] ?? '';
+   
+    $libelle = filter_var(trim($_POST['libelle'] ?? ''), FILTER_SANITIZE_SPECIAL_CHARS);
+    $description = filter_var(trim($_POST['description'] ?? ''), FILTER_SANITIZE_SPECIAL_CHARS);
+    $categorieInput = filter_var($_POST['categorie'] ?? '', FILTER_SANITIZE_SPECIAL_CHARS);
     $tarifTailles = $_POST['tarif_taille'] ?? [];
     $tarifPrix = $_POST['tarif_prix'] ?? [];
+    
+    $categorieValide = in_array($categorieInput, $categories, true);
+    
+    
     $tarifs = [];
-
     foreach ($tarifTailles as $idx => $taille) {
-        $taille = trim((string) $taille);
+        $taille = filter_var(trim((string) $taille), FILTER_SANITIZE_SPECIAL_CHARS);
         $prixField = $tarifPrix[$idx] ?? '';
+        
         if ($taille === '' || $prixField === '') {
             continue;
         }
+        
         $prixValue = filter_var($prixField, FILTER_VALIDATE_FLOAT);
-        if ($prixValue === false) {
+        if ($prixValue === false || $prixValue < 0) {
             continue;
         }
+        
+        
+        if (!in_array($taille, $sizeOptions, true)) {
+            continue;
+        }
+        
         $tarifs[] = [
             'taille' => $taille,
             'tarif' => $prixValue
         ];
     }
 
-    if ($libelle === '' || $description === '' || $categorieInput === '' || empty($tarifs)) {
+    // Validation finale après filtrage
+    if ($libelle === '' || $description === '' || !$categorieValide || empty($tarifs)) {
         $formError = "Merci de remplir toutes les données et au moins un tarif valide.";
     } else {
         $lastProduct = $produitsCol->findOne([
